@@ -1,20 +1,20 @@
 # Introduction
 
-shared-cache helps multiple processes to synchronize in order to share a disk repository on a host. This repository will generally be used to store some readonly data downloaded from another location.
+[shared-cache](https://github.com/pigay/shared-cache) helps multiple processes to synchronize in order to share a disk repository on a host. This repository will generally be used to store some readonly data downloaded from another location.
 
-shared-cache is designed to to create the repository, download the specified data in a concurrent-safe manner.
+[shared-cache](https://github.com/pigay/shared-cache) is designed to to create the repository, download the specified data in a concurrent-safe manner.
 
 The first process registering for access to the repository will trigger its creation. Other processes can then register for repository use. Each process has to unregister from the repository when it no longer needs access. The last process to unregister will trigger repository deletion.
 
-When defining a repository, shared-cache user will have to specify the download procedure and optinnally a repository name. The download procedure is a list of stacked loader modules. Loader modules can point to a procedure for downloading a file from some url. Alternately, thay can handle a kind of transformation (such as checksum, untar, etc.) on files produced from lower loaders in the stack. 
+When defining a repository, [shared-cache](https://github.com/pigay/shared-cache) user will have to specify the download procedure and optinnally a repository name. The download procedure is a list of stacked loader modules. Loader modules can point to a procedure for downloading a file from some url. Alternately, thay can handle a kind of transformation (such as checksum, untar, etc.) on files produced from lower loaders in the stack. 
 
-Additionally, shared-cache can look for a directory with enough space to hold a repository (out of a user provided list of directories).
+Additionally, [shared-cache](https://github.com/pigay/shared-cache) can look for a directory with enough space to hold a repository (out of a user provided list of directories).
 
 # Using shared-cache
 
 ## Installation
 
-Installing shared-cache is only a matter of downloading and extracting a distribution tarball and calling `setup.py` script. For example:
+Installing [shared-cache](https://github.com/pigay/shared-cache) is only a matter of downloading and extracting a distribution tarball and calling `setup.py` script. For example:
 
 ```bash
 tar xvf shared-cache-0.1.tar.gz
@@ -22,11 +22,11 @@ cd shared-cache-0.1
 python setup.py install
 ```
 
-You can use the `--prefix=<prefix-path>` option to `setup.py` in order to choose where you want to install shared-cache. In that case, make sure that `<prefix-path>/bin` is in your `PATH` and `<prefix-path>/lib/pythonx.y/site-packages` is in your `PYTHONPATH` (provided `pythonx.y` correspond to the version of Python you use).
+You can use the `--prefix=<prefix-path>` option to `setup.py` in order to choose where you want to install [shared-cache](https://github.com/pigay/shared-cache). In that case, make sure that `<prefix-path>/bin` is in your `PATH` and `<prefix-path>/lib/pythonx.y/site-packages` is in your `PYTHONPATH` (provided `pythonx.y` correspond to the version of Python you use).
 
 ## Use
 
-Using shared-cache usually consists in the following sequence:
+Using [shared-cache](https://github.com/pigay/shared-cache) usually consists in the following sequence:
 1 register
 2 use (user application dependent)
 3 unregister
