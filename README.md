@@ -6,7 +6,7 @@
 
 The first process registering for access to the repository will trigger its creation. Other processes can then register for repository use. Each process has to unregister from the repository when it no longer needs access. The last process to unregister will trigger repository deletion.
 
-When defining a repository, [shared-cache](https://github.com/pigay/shared-cache) user will have to specify the download procedure and optinnally a repository name. The download procedure is a list of stacked loader modules. Loader modules can point to a procedure for downloading a file from some url. Alternately, thay can handle a kind of transformation (such as checksum, untar, etc.) on files produced from lower loaders in the stack. 
+When defining a repository, [shared-cache](https://github.com/pigay/shared-cache) user will have to specify the download procedure and optionally a repository name. The download procedure is a list of stacked loader modules. Loader modules can point to a procedure for downloading a file from some url. Alternately, thay can handle a kind of transformation (such as checksum, untar, etc.) on files produced from lower loaders in the stack. 
 
 Additionally, [shared-cache](https://github.com/pigay/shared-cache) can look for a directory with enough space to hold a repository (out of a user provided list of directories).
 
