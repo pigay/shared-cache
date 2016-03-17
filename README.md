@@ -82,3 +82,9 @@ After using this repository, one has to release it to eventually be deleted. We 
 sc --unuse $repo_args
 ```
 
+# License
+
+[shared-cache](https://github.com/pigay/shared-cache) comes with its own copy of [flufl.lock](http://launchpad.net/flufl.lock) which is released under the GNU LGPL v2. Refer to [lockfile.py](sharedcache/lockfile.py) for the full license.
+
+
+For the rest, [shared-cache](https://github.com/pigay/shared-cache) is released under the [WTFPL - Do What the Fuck You Want to Public License](http://www.wtfpl.net/). ![WTPLF](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png)
