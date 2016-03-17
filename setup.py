@@ -7,7 +7,7 @@ setup( name = 'shared-cache',
       description = 'multiple process shared-cache tool',
       author = 'Pierre Gay',
       author_email = 'pierre.gay@u-bordeaux.fr',
-#      url = 'http://www',
+      url = 'https://github.com/pigay/shared-cache',
       packages = ['sharedcache', 'sharedcache.loaders'],
       scripts = ['sc'],
      )
